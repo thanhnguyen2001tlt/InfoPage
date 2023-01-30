@@ -1,15 +1,15 @@
-// Preloader
-const preloader = document.querySelector("#preloader");
-const main = document.querySelector(".main");
-window.addEventListener("load", () => {
-  preloader.classList.add("hide-complete");
-  setTimeout(() => {
-    main.classList.remove("hidden");
-  }, 50);
-  setTimeout(() => {
-    preloader.remove();
-  }, 2500);
-});
+// // Preloader
+// const preloader = document.querySelector("#preloader");
+// const main = document.querySelector(".main");
+// window.addEventListener("load", () => {
+//   preloader.classList.add("hide-complete");
+//   setTimeout(() => {
+//     main.classList.remove("hidden");
+//   }, 50);
+//   setTimeout(() => {
+//     preloader.remove();
+//   }, 2500);
+// });
 
 // Typing Animation
 const typed = new Typed(".typing", {
@@ -111,9 +111,9 @@ document.addEventListener("contextmenu", (event) => event.preventDefault());
 
 document.onkeydown = function (e) {
   // disable F12 key
-  if (e.keyCode == 123) {
-    return false;
-  }
+  // if (e.keyCode == 123) {
+  //   return false;
+  // }
 
   // disable I key
   if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
