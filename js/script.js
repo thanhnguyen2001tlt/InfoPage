@@ -111,7 +111,9 @@ document.addEventListener("contextmenu", (event) => event.preventDefault());
 
 document.onkeydown = function (e) {
   // disable F12 key
-  
+  if (e.key == "F12") {
+    return false;
+  }
 
   // disable I key
   if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
