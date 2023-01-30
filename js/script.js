@@ -1,15 +1,15 @@
-// // Preloader
-// const preloader = document.querySelector("#preloader");
-// const main = document.querySelector(".main");
-// window.addEventListener("load", () => {
-//   preloader.classList.add("hide-complete");
-//   setTimeout(() => {
-//     main.classList.remove("hidden");
-//   }, 50);
-//   setTimeout(() => {
-//     preloader.remove();
-//   }, 2500);
-// });
+// Preloader
+const preloader = document.querySelector("#preloader");
+const main = document.querySelector(".main");
+window.addEventListener("load", () => {
+  preloader.classList.add("hide-complete");
+  setTimeout(() => {
+    main.classList.remove("hidden");
+  }, 50);
+  setTimeout(() => {
+    preloader.remove();
+  }, 2500);
+});
 
 // Typing Animation
 const typed = new Typed(".typing", {
